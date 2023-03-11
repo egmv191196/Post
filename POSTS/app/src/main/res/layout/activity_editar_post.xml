@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.EditarPost">
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el ID"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        app:layout_constraintTop_toBottomOf="@id/tvID"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/tvUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el userID"
+        app:layout_constraintTop_toBottomOf="@id/etID"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/etUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="userID"
+        app:layout_constraintTop_toBottomOf="@id/tvUserID"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el title"
+        app:layout_constraintTop_toBottomOf="@id/etUserID"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el Body"
+        app:layout_constraintTop_toBottomOf="@id/etTitle"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/etBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body"
+        app:layout_constraintTop_toBottomOf="@id/tvBody"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btnPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Put"
+        app:layout_constraintTop_toBottomOf="@id/etBody"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/resultadoRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnPut"
+        android:layout_margin="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
